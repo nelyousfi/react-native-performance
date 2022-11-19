@@ -15,6 +15,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc -b",
+    "build:watch": "tsc -b --watch",
     "lint": "yarn eslint . --ext .ts,.tsx",
     "lint:fix": "yarn eslint . --ext .ts,.tsx --fix",
     "test": "tsc -b && yarn jest"
@@ -45,5 +46,8 @@
     "ios",
     "src",
     "*.podspec"
-  ]
+  ],
+  "dependencies": {
+    "tslib": "^2.4.1"
+  }
 }
